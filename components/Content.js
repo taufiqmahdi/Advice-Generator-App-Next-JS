@@ -41,14 +41,14 @@ const Content = () => {
         </Flex>
         <Flex
           align="center"
-          fontSize="26px"
-          h="47%"
-        //   noOfLines={3}
-        textOverflow='ellipsis'
+          fontSize="28px"
+          h="50%"
+          //   noOfLines={3}
+          textOverflow="ellipsis"
           textAlign="center"
-          lineHeight="1.2"
+          lineHeight="1.1"
         >
-          <Flex justify="center" align="center" >
+          <Flex justify="center" align="center">
             "{advice}"
           </Flex>
         </Flex>
@@ -69,15 +69,14 @@ const Content = () => {
           bottom="24px"
           borderRadius="50%"
           _hover={{
-                boxShadow: '0px 0px 18px hsl(150, 100%, 66%)',
-                cursor: 'pointer'
-            }}
+            boxShadow: "0px 0px 18px hsl(150, 100%, 66%)",
+            cursor: "pointer",
+          }}
         >
           <Image
             src="icon-dice.svg"
             alt="icon-dice"
             fit="none"
-            
             onClick={generateAdvice}
           />
         </Flex>
